@@ -26,3 +26,9 @@ git = "https://github.com/ivajloip/rust-lorawan.git"
 branch = "master"
 default-features = false
 features = ["default-crypto"]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
